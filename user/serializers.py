@@ -1,4 +1,4 @@
-from rest_framework.serialiizers import ModelSerializer
+from rest_framework.serializers import ModelSerializer
 from user.models import User
 
 

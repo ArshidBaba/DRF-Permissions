@@ -30,7 +30,7 @@ class UserViewSet(ModelViewSet):
 class LoginView(ViewSet):
     serializer_class = AuthTokenSerializer
 
-    def create(request):
+    def create(self, request):
         return ObtainAuthToken().post(request)
 
 class LogoutView(APIView):

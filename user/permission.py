@@ -38,7 +38,7 @@ class IsAdminUser(permissions.BasePermission):
         has_group_permission = _has_group_permission(request.user, self.required_groups)
         return request.user and has_group_permission
 
-class IsAdminOrAnonymousUser(permissions.Basepermission):
+class IsAdminOrAnonymousUser(permissions.BasePermission):
     required_groups = ['admin', 'anonymous']
 
     def has_permission(self, request, view):
